@@ -6,8 +6,8 @@ WORKDIR /hardware-effects
 COPY requirements.txt requirements.txt
 RUN pip3 install -r requirements.txt
 
-COPY . .
-RUN mkdir build && \
-    cd build && \
-    cmake -DCMAKE_BUILD_TYPE=Release .. && \
-    make -j
+# COPY . .
+# RUN mkdir build && \
+#     cd build && \
+#     cmake -DCMAKE_BUILD_TYPE=Release .. && \
+#     make -j
